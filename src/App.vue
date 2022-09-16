@@ -4,6 +4,7 @@ import { ref } from 'vue';
 // Check out https://vuejs.org/api/sfc-script-setup.html#script-setup
 import HelloWorld from './components/HelloWorld.vue';
 import CustomInput from './components/CustomInput.vue';
+import CustomInput2 from './components/CustomInput2.vue';
 
 const message = ref('hi');
 </script>
@@ -19,6 +20,7 @@ const message = ref('hi');
   </div>
   <HelloWorld msg="Vite + Vue" msgs="hi you" />
   <CustomInput v-model="message" /> {{ message }}
+  <CustomInput2 v-model="message" /> {{ message }}
 </template>
 
 <style scoped>
